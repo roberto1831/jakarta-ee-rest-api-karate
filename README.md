@@ -6,8 +6,7 @@
 ![JUnit](https://img.shields.io/badge/JUnit-5.9.3-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
 
-> Proyecto Java que implementa una **API REST con Jakarta EE (JAX-RS)** y pruebas de integración automatizadas con el framework **Karate**, desarrollado como parte del 2do parcial de Programación Avanzada – ESPE.
-
+> Proyecto Java que implementa una **API REST con Jakarta EE (JAX-RS)** y pruebas de integración automatizadas con el framework **Karate**
 ---
 
 ## 🏗️ Arquitectura del Proyecto
