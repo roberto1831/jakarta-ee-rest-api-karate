@@ -1,0 +1,612 @@
+﻿================================================================================
+REPORTE DE ANÁLISIS DE DIRECTORIO
+================================================================================
+
+Directorio analizado: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS
+Fecha de generación: 10/05/2026 08:41:20
+Total de carpetas: 15
+Total de archivos: 15
+Tamaño total: 81,8 KB
+
+Extensiones incluidas en este reporte:
+  .cmd (1 archivos, 6,58 KB)
+  .gitignore (2 archivos, 674 B)
+  .jar (1 archivos, 57,35 KB)
+  .java (2 archivos, 445 B)
+  .properties (1 archivos, 232 B)
+  .xml (7 archivos, 6,51 KB)
+
+================================================================================
+ESTRUCTURA DE DIRECTORIOS Y ARCHIVOS
+================================================================================
+
+📁 APIS/
+  📄 .gitignore (490 B)
+  📄 mvnw.cmd (6,58 KB)
+  📄 pom.xml (1,6 KB)
+  📁 .idea/
+    📄 .gitignore (184 B)
+    📄 compiler.xml (537 B)
+    📄 encodings.xml (267 B)
+    📄 jarRepositories.xml (864 B)
+    📄 misc.xml (547 B)
+    📄 workspace.xml (2,47 KB)
+  📁 .mvn/
+    📁 wrapper/
+      📄 maven-wrapper.jar (57,35 KB)
+      📄 maven-wrapper.properties (232 B)
+  📁 src/
+    📁 main/
+      📁 java/
+        📁 org/
+          📁 espe/
+            📁 apis/
+              📄 HelloApplication.java (181 B)
+              📄 HelloResource.java (264 B)
+      📁 resources/
+        📁 META-INF/
+          📄 beans.xml (275 B)
+    📁 test/
+      📁 java/
+      📁 resources/
+
+================================================================================
+CONTENIDO DE ARCHIVOS
+================================================================================
+
+Carpeta: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS
+--------------------------------------------------------------------------------
+
+Archivo: .gitignore
+Tamaño: 490 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.gitignore
+Contenido:
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+------------------------------------------------------------
+
+Archivo: mvnw.cmd
+Tamaño: 6,58 KB
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\mvnw.cmd
+Contenido:
+
+@REM ----------------------------------------------------------------------------
+@REM Licensed to the Apache Software Foundation (ASF) under one
+@REM or more contributor license agreements.  See the NOTICE file
+@REM distributed with this work for additional information
+@REM regarding copyright ownership.  The ASF licenses this file
+@REM to you under the Apache License, Version 2.0 (the
+@REM "License"); you may not use this file except in compliance
+@REM with the License.  You may obtain a copy of the License at
+@REM
+@REM    https://www.apache.org/licenses/LICENSE-2.0
+@REM
+@REM Unless required by applicable law or agreed to in writing,
+@REM software distributed under the License is distributed on an
+@REM "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+@REM KIND, either express or implied.  See the License for the
+@REM specific language governing permissions and limitations
+@REM under the License.
+@REM ----------------------------------------------------------------------------
+
+@REM ----------------------------------------------------------------------------
+@REM Maven Start Up Batch script
+@REM
+@REM Required ENV vars:
+@REM JAVA_HOME - location of a JDK home dir
+@REM
+@REM Optional ENV vars
+@REM M2_HOME - location of maven2's installed home dir
+@REM MAVEN_BATCH_ECHO - set to 'on' to enable the echoing of the batch commands
+@REM MAVEN_BATCH_PAUSE - set to 'on' to wait for a keystroke before ending
+@REM MAVEN_OPTS - parameters passed to the Java VM when running Maven
+@REM     e.g. to debug Maven itself, use
+@REM set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
+@REM MAVEN_SKIP_RC - flag to disable loading of mavenrc files
+@REM ----------------------------------------------------------------------------
+
+@REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
+@echo off
+@REM set title of command window
+title %0
+@REM enable echoing by setting MAVEN_BATCH_ECHO to 'on'
+@if "%MAVEN_BATCH_ECHO%" == "on"  echo %MAVEN_BATCH_ECHO%
+
+@REM set %HOME% to equivalent of $HOME
+if "%HOME%" == "" (set "HOME=%HOMEDRIVE%%HOMEPATH%")
+
+@REM Execute a user defined script before this one
+if not "%MAVEN_SKIP_RC%" == "" goto skipRcPre
+@REM check for pre script, once with legacy .bat ending and once with .cmd ending
+if exist "%USERPROFILE%\mavenrc_pre.bat" call "%USERPROFILE%\mavenrc_pre.bat" %*
+if exist "%USERPROFILE%\mavenrc_pre.cmd" call "%USERPROFILE%\mavenrc_pre.cmd" %*
+:skipRcPre
+
+@setlocal
+
+set ERROR_CODE=0
+
+@REM To isolate internal variables from possible post scripts, we use another setlocal
+@setlocal
+
+@REM ==== START VALIDATION ====
+if not "%JAVA_HOME%" == "" goto OkJHome
+
+echo.
+echo Error: JAVA_HOME not found in your environment. >&2
+echo Please set the JAVA_HOME variable in your environment to match the >&2
+echo location of your Java installation. >&2
+echo.
+goto error
+
+:OkJHome
+if exist "%JAVA_HOME%\bin\java.exe" goto init
+
+echo.
+echo Error: JAVA_HOME is set to an invalid directory. >&2
+echo JAVA_HOME = "%JAVA_HOME%" >&2
+echo Please set the JAVA_HOME variable in your environment to match the >&2
+echo location of your Java installation. >&2
+echo.
+goto error
+
+@REM ==== END VALIDATION ====
+
+:init
+
+@REM Find the project base dir, i.e. the directory that contains the folder ".mvn".
+@REM Fallback to current working directory if not found.
+
+set MAVEN_PROJECTBASEDIR=%MAVEN_BASEDIR%
+IF NOT "%MAVEN_PROJECTBASEDIR%"=="" goto endDetectBaseDir
+
+set EXEC_DIR=%CD%
+set WDIR=%EXEC_DIR%
+:findBaseDir
+IF EXIST "%WDIR%"\.mvn goto baseDirFound
+cd ..
+IF "%WDIR%"=="%CD%" goto baseDirNotFound
+set WDIR=%CD%
+goto findBaseDir
+
+:baseDirFound
+set MAVEN_PROJECTBASEDIR=%WDIR%
+cd "%EXEC_DIR%"
+goto endDetectBaseDir
+
+:baseDirNotFound
+set MAVEN_PROJECTBASEDIR=%EXEC_DIR%
+cd "%EXEC_DIR%"
+
+:endDetectBaseDir
+
+IF NOT EXIST "%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config" goto endReadAdditionalConfig
+
+@setlocal EnableExtensions EnableDelayedExpansion
+for /F "usebackq delims=" %%a in ("%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config") do set JVM_CONFIG_MAVEN_PROPS=!JVM_CONFIG_MAVEN_PROPS! %%a
+@endlocal & set JVM_CONFIG_MAVEN_PROPS=%JVM_CONFIG_MAVEN_PROPS%
+
+:endReadAdditionalConfig
+
+SET MAVEN_JAVA_EXE="%JAVA_HOME%\bin\java.exe"
+set WRAPPER_JAR="%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.jar"
+set WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
+
+set DOWNLOAD_URL="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
+
+FOR /F "usebackq tokens=1,2 delims==" %%A IN ("%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.properties") DO (
+    IF "%%A"=="wrapperUrl" SET DOWNLOAD_URL=%%B
+)
+
+@REM Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
+@REM This allows using the maven wrapper in projects that prohibit checking in binary data.
+if exist %WRAPPER_JAR% (
+    if "%MVNW_VERBOSE%" == "true" (
+        echo Found %WRAPPER_JAR%
+    )
+) else (
+    if not "%MVNW_REPOURL%" == "" (
+        SET DOWNLOAD_URL="%MVNW_REPOURL%/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
+    )
+    if "%MVNW_VERBOSE%" == "true" (
+        echo Couldn't find %WRAPPER_JAR%, downloading it ...
+        echo Downloading from: %DOWNLOAD_URL%
+    )
+
+    powershell -Command "&{"^
+		"$webclient = new-object System.Net.WebClient;"^
+		"if (-not ([string]::IsNullOrEmpty('%MVNW_USERNAME%') -and [string]::IsNullOrEmpty('%MVNW_PASSWORD%'))) {"^
+		"$webclient.Credentials = new-object System.Net.NetworkCredential('%MVNW_USERNAME%', '%MVNW_PASSWORD%');"^
+		"}"^
+		"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $webclient.DownloadFile('%DOWNLOAD_URL%', '%WRAPPER_JAR%')"^
+		"}"
+    if "%MVNW_VERBOSE%" == "true" (
+        echo Finished downloading %WRAPPER_JAR%
+    )
+)
+@REM End of extension
+
+@REM Provide a "standardized" way to retrieve the CLI args that will
+@REM work with both Windows and non-Windows executions.
+set MAVEN_CMD_LINE_ARGS=%*
+
+%MAVEN_JAVA_EXE% ^
+  %JVM_CONFIG_MAVEN_PROPS% ^
+  %MAVEN_OPTS% ^
+  %MAVEN_DEBUG_OPTS% ^
+  -classpath %WRAPPER_JAR% ^
+  "-Dmaven.multiModuleProjectDirectory=%MAVEN_PROJECTBASEDIR%" ^
+  %WRAPPER_LAUNCHER% %MAVEN_CONFIG% %*
+if ERRORLEVEL 1 goto error
+goto end
+
+:error
+set ERROR_CODE=1
+
+:end
+@endlocal & set ERROR_CODE=%ERROR_CODE%
+
+if not "%MAVEN_SKIP_RC%"=="" goto skipRcPost
+@REM check for post script, once with legacy .bat ending and once with .cmd ending
+if exist "%USERPROFILE%\mavenrc_post.bat" call "%USERPROFILE%\mavenrc_post.bat"
+if exist "%USERPROFILE%\mavenrc_post.cmd" call "%USERPROFILE%\mavenrc_post.cmd"
+:skipRcPost
+
+@REM pause the script if MAVEN_BATCH_PAUSE is set to 'on'
+if "%MAVEN_BATCH_PAUSE%"=="on" pause
+
+if "%MAVEN_TERMINATE_CMD%"=="on" exit %ERROR_CODE%
+
+cmd /C exit /B %ERROR_CODE%
+
+
+------------------------------------------------------------
+
+Archivo: pom.xml
+Tamaño: 1,6 KB
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\pom.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.petstore</groupId>
+    <artifactId>petstore-api-tests</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <karate.version>1.4.0</karate.version>
+        <junit.version>5.9.3</junit.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Karate -->
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
+            <version>${karate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit5</artifactId>
+            <version>${karate.version}</version>
+        </dependency>
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+------------------------------------------------------------
+
+Carpeta: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea
+--------------------------------------------------------------------------------
+
+Archivo: .gitignore
+Tamaño: 184 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea\.gitignore
+Contenido:
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+
+------------------------------------------------------------
+
+Archivo: compiler.xml
+Tamaño: 537 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea\compiler.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="APIS" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
+
+------------------------------------------------------------
+
+Archivo: encodings.xml
+Tamaño: 267 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea\encodings.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
+
+------------------------------------------------------------
+
+Archivo: jarRepositories.xml
+Tamaño: 864 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea\jarRepositories.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>
+
+------------------------------------------------------------
+
+Archivo: misc.xml
+Tamaño: 547 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea\misc.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+
+------------------------------------------------------------
+
+Archivo: workspace.xml
+Tamaño: 2,47 KB
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.idea\workspace.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fae0a5e7-72db-448b-b69f-605d118cf136" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2wYSulEbJduzjwB7586Rj8DtRbx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fae0a5e7-72db-448b-b69f-605d118cf136" name="Changes" comment="" />
+      <created>1746217242037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746217242037</updated>
+      <workItem from="1746217243164" duration="218000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
+
+------------------------------------------------------------
+
+Carpeta: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.mvn\wrapper
+--------------------------------------------------------------------------------
+
+Archivo: maven-wrapper.jar
+Tamaño: 57,35 KB
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.mvn\wrapper\maven-wrapper.jar
+Contenido:
+
+[Archivo binario - contenido no mostrado]
+
+------------------------------------------------------------
+
+Archivo: maven-wrapper.properties
+Tamaño: 232 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\.mvn\wrapper\maven-wrapper.properties
+Contenido:
+
+distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.6/apache-maven-3.9.6-bin.zip
+wrapperUrl=https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.3.0/maven-wrapper-3.3.0.jar
+
+------------------------------------------------------------
+
+Carpeta: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\src\main\java\org\espe\apis
+--------------------------------------------------------------------------------
+
+Archivo: HelloApplication.java
+Tamaño: 181 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\src\main\java\org\espe\apis\HelloApplication.java
+Contenido:
+
+package org.espe.apis;
+
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
+
+@ApplicationPath("/api")
+public class HelloApplication extends Application {
+
+}
+
+------------------------------------------------------------
+
+Archivo: HelloResource.java
+Tamaño: 264 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\src\main\java\org\espe\apis\HelloResource.java
+Contenido:
+
+package org.espe.apis;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+
+@Path("/hello-world")
+public class HelloResource {
+    @GET
+    @Produces("text/plain")
+    public String hello() {
+        return "Hello, World!";
+    }
+}
+
+------------------------------------------------------------
+
+Carpeta: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\src\main\resources\META-INF
+--------------------------------------------------------------------------------
+
+Archivo: beans.xml
+Tamaño: 275 B
+Ruta completa: G:\7TO_SEMESTRE_ESPE\Programacion_avanzada\2_parcial\APIS\src\main\resources\META-INF\beans.xml
+Contenido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_4_1.xsd">
+
+</beans>
+
+------------------------------------------------------------
+
